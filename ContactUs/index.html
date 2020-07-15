@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <header id="header" class="alt">
+            <div class="container">
+                <nav id="nav">
+                    <ul class="nav-area">
+                        <li><a href="../HomePage/homePage.html">Home</a></li>
+                        <li><a href="../Products/index.php">Library</a></li>
+                        <li><a href="../AboutUs/index.html">About Us</a></li>
+                        <li><a href="index.html">Contact Us</a></li>
+                        <li><a href="../LoginForm/loginForm.html">Log out</a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </header>
+        <div class="wrapper">
+            <form class="contact-form" action="views/insertContactView.php" method="POST">
+                <div class="input-fields">
+                    <input type="text" class="input" name="Name" id="Name" placeholder="Name" onblur="validateContactUs()"><div id="div1"></div>
+                    <input type="text" class="input" name="Email" id="Email" placeholder="Email" onblur="validateContactUs()"><div id="div2"></div>
+                    <input type="text" class="input" name="Phone" id="Phone" placeholder="Phone" onblur="validateContactUs()"><div id="div3"></div>
+                    <input type="text" class="input" name="Subject" id="Subject" placeholder="Subject" onblur="validateContactUs()"><div id="div4"></div>
+                </div>
+                <div class="msg">
+                    <textarea name="Message" placeholder="Message"></textarea>
+                <button name="SendBtn" class="btn">Send</button>
+                </div>
+            </form>    
+        </div>
+        <script src="js/validationContactUsForm.js"></script>
+    </body>
+</html>    

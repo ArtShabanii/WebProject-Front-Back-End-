@@ -1,0 +1,164 @@
+html body{
+    margin:0;
+    overflow-x: hidden;
+}
+
+* {
+    transition: all .3s ease;
+    box-sizing: border-box;
+}
+/*HEADER*/
+
+#header {
+	background-color: transparent;
+	cursor: default;
+	left: 0;
+	padding: 20px 10px;
+    border: none;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    width: auto;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding:5px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-area li a:hover{
+    background:rgba(180,149,129);
+    color:#fff;
+}
+
+#header.alt {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	position: absolute;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+    .nav-area li {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      margin: 1%;
+    }
+}
+
+/*BANNER*/
+
+.banner{
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/image.png");  
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(180,149,129,.8);
+    color: #fff;
+    font-size: 1.125rem;
+}
+.welcome-text h1{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(180,149,129,.8);
+    color: #fff;
+    font-size: 1.125rem;
+}
+#more{
+    display:none;
+}
+
+#myBtn{
+    border: none;
+    background: none;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+
+#myBtn:hover {
+    color:#404040  !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+    @media screen and (max-width:800px) {
+        .p {
+          font-size: 14px;
+        }
+        .welcome-text{
+            top: 30%;
+        }
+    }
+    @media screen and (max-width:200px) {
+        .welcome-text h1 {
+          font-size: 12px;
+        }
+        .p {
+            font-size: 10px;
+          }
+    }
+    

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+
+#header {
+	background-color: transparent;
+	cursor: default;
+	left: 0;
+	padding: 20px 10px;
+    border: none;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    width: auto;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding:5px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-area li a:hover{
+    background:rgba(180,149,129);
+    color:#fff;
+}
+
+#header.alt {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	position: absolute;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+    .nav-area li {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      margin:1%;
+    }
+}
+
+body{  
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/image7.jpg");
+    background-size: cover;
+    height: 100vh; 
+    background-repeat: no-repeat;
+   
+}
+
+.wrapper{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.14);
+    
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+    width: 48%;
+
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border:0;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    color:#fff;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+::-moz-input-placeholder{
+    color: #fff;
+}
+::-ms-input-placeholder{
+    color: #fff;
+}
+.btn{
+    border: none;
+    background: none;
+    color: #ffffff !important;
+    text-align: center;
+    font-weight: 100;
+    padding: 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    color:#404040  !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width:600px){
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .msg textarea{
+        height: 80px;
+    }
+
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+} 

@@ -1,0 +1,100 @@
+html body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: transparent;
+    cursor: default;
+    left: 0;
+    padding: 20px 10px;
+    border: none;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.nav-areaaa {
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.liform {
+    display: inline-block;
+    width: auto;
+}
+
+.nav-areaaa li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-areaaa li a:hover {
+    background: rgba(180, 149, 129);
+    color: #fff;
+}
+
+#header.alt {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    position: absolute;
+}
+
+@media screen and (max-width:800px) {
+    .nav-areaaa li {
+        width: 100%;
+        margin: 1%;
+    }
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    position: absolute;
+    top: 270px;
+    left: 15px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 150%;
+    color: white;
+}
+
+.nav-area li {
+    display: table;
+    width: auto;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-bottom: 5px solid hsla(0, 100%, 50%, 0.3);
+}
+
+
+.nav-area p {
+    font-size: 170%;
+    padding-bottom: 10%;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.6)), url("../../Images/libarary2.png");
+    width: 100%;
+    height: 100vh;
+}

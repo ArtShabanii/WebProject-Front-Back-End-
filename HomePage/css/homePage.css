@@ -1,0 +1,515 @@
+html body{
+    margin:0;
+    overflow-x: hidden;
+}
+
+* {
+    transition: all .3s ease;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+#header {
+	background-color: transparent;
+	cursor: default;
+	left: 0;
+	padding: 20px 10px;
+    border: none;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    width: auto;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding:5px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-area li a:hover{
+    background:rgba(180,149,129);
+    color:#fff;
+}
+
+#header.alt {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	position: absolute;
+}
+
+@media screen and (max-width:800px) {
+    .nav-area li {
+      width:100%; 
+      margin: 1%;
+    }
+}
+
+/*BANNER*/
+
+#banner {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../Images/bbimg2.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+.bannerTxt{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(180,149,129,.8);
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.ct-btn-scroll {
+    top: 95%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    animation-duration: 2.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .bannerTxt {
+      font-size: 0.85rem; 
+    }
+    .ct-btn-scroll{
+        top:85%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .bannerTxt {
+      font-size: 0.55rem; 
+    }
+}
+
+/*BANNER-END*/
+
+/*TEXT AFTER PHOTO*/
+
+.contentText4{
+    text-align: center;
+    margin-top: 3%;
+    color: #B49581;
+    font-size: 40px;
+}
+
+.contentText5{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+}
+
+/*QUOTE*/
+
+#quote{
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../Images/reading.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 5%;
+}
+
+.quoteDiv{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(180,149,129,.8);
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.quoteImg{
+    position: relative;
+    width: 7%;
+    height: 0;
+    padding: 7% 0 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid gray;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+}
+
+.quoteImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:400px) {
+    .quoteImg {
+      display: none;
+    }
+}
+
+@media screen and (max-height:500px) {
+    .quoteImg {
+      display: none;
+    }
+}
+
+/*SECTION-ID-TWO*/
+
+#bookShow1{
+    display: Block;
+    margin-top: 5%;
+}
+#bookShow2{
+    display: none;
+    margin-top: 5%;
+}
+.oneh1{
+    text-align: center;
+    font-size: 250%;
+    color: #ffffff;
+    background-color: #B49581;
+    width: 100%;
+    height: auto;
+}
+
+/*BOOKS*/
+
+.book2, .book4{
+    display:block;
+    width: 10%;
+    clear: none;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-left: 3%;
+    border: 0%;
+    font-size: 100%;
+    font: inherit;
+}
+
+.bookImg2{
+    border-radius: 0;
+    margin-bottom: 4em;
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+.bookImg2 img{
+    border-radius: 0;
+    width: 100%;
+    display: block;
+
+}
+
+.bookImg2 h3{
+    background-color: #fff;
+    box-shadow: 0px 0.0375em 0.125em 0px rgba(180,149,129, 1);
+    display: block;
+    padding: 2em 1em;
+    font-size: 1.35em;
+    line-height: 1.5em;
+    color: #484848;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.book2:hover{
+    width: 16%;
+}
+.book4:hover{
+    width: 16%;
+}
+@media screen and (max-width:1280px) {
+    .bookImg2 h3 {
+        font-size: 0.7em; 
+    }
+    .book2:hover{
+        width: 16%;
+    }
+    .book4{
+        display: none;
+    }
+
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+    .book2 {
+      width:100%; 
+      margin: 0%;
+    }
+    .book2:hover{
+        width: 100%;
+    }
+    .prevBook{
+        display: none;
+    }
+    .nextBook{
+        display: none;
+    }
+}
+
+.bs{
+    margin-top: 35%;
+    text-align: center;
+}
+
+.bs1{
+    color: #000;
+    font-size: 150%;
+    width: 100%;
+    height: auto;
+}
+
+.bs1 a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bs1 a:hover{
+    background:#fff;
+    color:rgba(180,149,129);
+}
+
+@media screen and (max-width:1300px) {
+    .bs {
+        margin-top:30%;  
+        width: 100%;
+        height: auto;
+    }
+    .book2{
+        margin-left: 5%;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(180, 149, 129);
+    color: #fff;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    margin-top: 3%;
+    overflow-x: hidden;
+}
+
+.footerContent{
+    margin-top: 3%;
+    width: 100%;
+}
+
+.footerTitle{
+    text-align: center;
+}
+
+.footerTitle p{
+    font-size: 200%;
+}
+
+.footerContent1{
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    padding-left: 30%;
+}
+
+.icon{
+    margin: 1%;
+}
+
+.icon a{
+    color: #fff;
+    text-decoration: none; 
+}
+
+.icon img{
+    width: 20px;
+    height: auto;
+}
+
+.footerContent2{
+    list-style-type: none;
+    float: right;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.endFooter{
+    border-top: 2px solid #9a745b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.endFooter a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+    text-transform: uppercase;
+}
+
+.socialMediaIcon{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media screen and (max-width:800px) {
+    .footerContent1 {
+        width:100%; 
+        margin:0%;
+        padding:0px;
+    }
+    .footerContent2 {
+        width:100%; 
+        margin: 0%;
+        padding:0px;
+    }
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a rgb(180, 149, 129) background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgb(180, 149, 129);
+}
+
+.prevBook, .nextBook {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    color: rgb(180, 149, 129);
+    padding: 16px;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nextBook{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevBook{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevBook:hover, .nextBook:hover {
+    background-color: rgb(180, 149, 129);
+    color:white;
+}

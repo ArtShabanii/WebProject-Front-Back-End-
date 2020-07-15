@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+/*https://www.0to255.com/b49581 --------------- COLORS*/
+
+* {
+	transition: all .3s ease;
+	box-sizing: border-box;
+	margin:0;
+    overflow-x: hidden;
+}
+
+
+body {
+	background: #cdb9ac;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+}
+
+.container {
+	background-color: #fff;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+				0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	width: 768px;
+	max-width: 100%;
+    min-height: 480px;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #fcfaf1;
+    background-color: #B49581;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	outline-color: #B49581;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.form-container-sign-in-container{
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+	height: 100%;
+	display: Block;
+}
+
+.form-container-sign-up-container{
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+	height: 100%;
+	display: none;
+}
+
+
+
+.signUpBtn{
+	background-color: #B49581;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+	height: 100%;
+	display: Block;
+}
+
+.suBtn{
+	margin-top: 60%;
+	margin-left: 30%;
+  	max-width: 300px;	
+}
+
+.logInBtn{
+	/*background-color: #00AE91;*/
+	background-color: #B49581;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+	height: 100%;
+	display: none;
+}
+
+
+
+.hideButton{
+	display: none;
+}
+
+@media screen and (max-width:800px) {
+	.form-container-sign-in-container{
+		width: 100%;
+		height: 90%;
+	}
+	.form-container-sign-up-container{
+		width: 100%;
+		height: 90%;
+
+	}
+	.signUpBtn{
+		width: 100%;
+		height: 10%;
+	}
+	.logInBtn{
+		width: 100%;
+		height: 10%;
+	}
+	.hideButton{
+		color: #fff;
+		display: block;
+		text-align: center;
+		cursor: pointer;
+	}
+	.suBtn{
+		display: none;
+	}
+}
+
+#submit:disabled,
+#submit[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#SignUpButton:disabled,
+#SignUpButton[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#submit{
+	border-radius: 20px;
+	border: 1px solid #fcfaf1;
+    background-color: #B49581;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}

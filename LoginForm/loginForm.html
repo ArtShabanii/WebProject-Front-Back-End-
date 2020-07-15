@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN/SIGNUP - WELCOME</title>
+        <link rel="stylesheet" href="css/loginForm.css">
+        <script src="js/validationSignIn.js"></script>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <article>
+	        <div class="form-container-sign-up-container" id="form-container-sign-up-container">
+				<form name="signUpForm" action="views/insertUserView.php" method="POST">
+			        <h1>Create Account</h1>
+					<input type="text" name="FName" id="FName" placeholder="First Name" />
+					<input type="text" name="Username" id="Username" placeholder="Username" />
+					<input type="email" name="Email" id="Email" placeholder="Email" />
+					<input type="password" name="Password" id="Password" placeholder="Password" />
+			        <button name="SignUpButton" id="SignUpButton" >Sign Up</button>
+		        </form>
+            </div>
+            </article>
+            <article>
+	        <div class="form-container-sign-in-container" id="form-container-sign-in-container">
+		        <form name="logInForm" action="views/loginValid.php" method="POST">
+			        <h1>Sign in</h1>
+			        <input type="text" name="username" id="username"  placeholder="Username" />
+					<input type="password" name="password" id="password" placeholder="Password"/> 
+					<a href="#" style="color:#000">Forgot your password?</a>
+					<!-- <input type="button" value="Login" id="submit" onclick=""/> -->
+					<button name="SignInButton" id="SignInButton">Sign In</button>
+		        </form>
+			</div>
+			</article>
+			<div class="signUpBtn" id="signUpBtn">
+				<h1 class="hideButton" onclick="switchVisibleSignUp()">Sign Up</h1>
+				<button class="suBtn" id="suBtn" onclick="switchVisibleSignUp()">Sign Up</button>
+			</div>
+			<div class="logInBtn" id="logInBtn">
+				<h1 class="hideButton" onclick="switchVisibleLogIn()">Login</h1>
+				<button class="suBtn" id="suBtn" onclick="switchVisibleLogIn()">Login</button>
+			</div>  
+		</div>
+		<script src="js/validationSignUp.js"></script>
+		<script src="js/loginForm.js"></script>
+    </body>
+</html>

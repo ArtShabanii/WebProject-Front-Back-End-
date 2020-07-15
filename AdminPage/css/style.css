@@ -1,0 +1,84 @@
+html body{
+    margin:0;
+    overflow-x: hidden;
+}
+
+* {
+    transition: all .3s ease;
+    box-sizing: border-box;
+}
+
+
+
+#tbl {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#tbl td, #tbl th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #fcfaf1;}
+
+#tbl tr:hover {background-color: #ddd;}
+
+#tbl th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #B49581;
+	color: white;
+}
+
+@media screen and (max-width:800px) {
+    .nav-area li {
+      width:100%; 
+      margin: 1%;
+    }
+}
+
+/*CREATE FORM*/
+.signUpForm{
+    width: 20%;
+    text-align: center;
+    display: grid;
+    margin-left: 40%;
+}
+
+#SignUpButton{
+    border-radius: 20px;
+	border: 1px solid #fcfaf1;
+    background-color: #B49581;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.signUpForm input{
+    margin: 1%;
+}
+
+.signUpForm select{
+    margin: 1%;
+}
+
+.Back{
+    margin: 3%;
+    border-radius: 20px;
+	border: 1px solid #fcfaf1;
+    background-color: #60BEA0;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
